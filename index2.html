@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mně - Eliška Kubíková</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #16e930; /* Tvoje zelená */
+            color: #fc03d9; /* Tvoje růžová */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #fc03d9;
+            margin-bottom: 0.5rem;
+        }
+        .info-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        /* Styl pro klikací řádky (Hudba a Tanec) */
+        .yt-link {
+            text-decoration: none;
+            color: #fc03d9;
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            background: #f3e5f5;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .yt-link:hover {
+            background: #ebd4f0;
+            transform: scale(1.05);
+            box-shadow: 0 2px 8px rgba(252, 3, 217, 0.2);
+        }
+        /* Styl pro neklikací řádek (Kočka) */
+        .static-item {
+            margin: 10px 0;
+            padding: 12px;
+            background: #f3e5f5;
+            border-radius: 8px;
+            color: #fc03d9;
+        }
+        .emoji {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Eliška Kubíková</h1>
+        <p>Vítejte na mé stránce! Tady je pár věcí o mně:</p>
+        
+        <div class="info-list">
+            <a href="https://youtu.be/1oYWnbTSang?si=4Q55jJzuqreRf2Tt" target="_blank" class="yt-link">
+                <span class="emoji">🎵</span> Mám ráda hudbu
+            </a>
+            
+            <a href="https://youtu.be/L0QIuPZL20M?si=m7v_9N3sUxb-8glh" target="_blank" class="yt-link">
+                <span class="emoji">💃</span> Ráda tancuji
+            </a>
+            
+            <div class="static-item">
+                <span class="emoji">🐱</span> Mám kočku jménem <strong>Viki</strong>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
